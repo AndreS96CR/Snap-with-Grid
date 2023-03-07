@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --font: 1.6rem;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.4rem;
+    width: 100%;
+    padding: 0 1.8rem;
+}
+.dropdowns-container{
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+main{
+    display: grid;
+    grid-template: repeat(2, auto) / 1fr;
+}
+.item-1 img{
+    width: 100%;
+}
+.item-2 h1{
+    text-align: center;
+    font-size: 3.6rem;
+    font-family: 'Epilogue', sans-serif;
+    margin-block-start: 4rem;
+    margin-block-end: 1.8rem;
+}
+.item-2 br{
+    display: none;
+}
+.item-2 p{
+    font-size: 2rem;
+    color: var(--Medium-Gray);
+    line-height: 2.4rem;
+    text-align: center;
+    padding: 0 2.2rem;
+}
+.main-button-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-block-start: 1.8rem;
+}
+.item-2 button{
+    background-color: var(--Almost-Black);
+    border-radius: 1.4rem;
+    color: var(--Almost-White);
+    width: 12rem;
+    height: 4.4rem;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    margin-block-start: 4rem;
+    width: 100%;
+}
+footer figure img{
+    width: 6.4rem;
+    margin: 0 1.2rem;
+
+}
+
+@media (min-width:1440px){
+    .container-of-main-footer{
+        display: grid;
+        grid-template: repeat(12, 10.50rem) / 2fr 2fr;
+        width: 113rem;
+        margin: 0 auto;
+    }
+
+
+    nav{
+        height: 9.8rem;
+        margin: 0 auto;
+        width: 1440px;
+    }
+    .hamburguer-icon{
+        display: none;
+    }
+    .dropdowns-container{
+        display: flex;
+    }
+    .nav-buttons-container{
+        display: flex;
+        align-items: center;
+    }
+    .dropdown{
+        display: flex;
+        align-items: center;
+    }
+    .arrow-down{
+        background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765327/icon-arrow-down_zvgped.svg");
+        width: 1rem;
+        height: 1rem;
+        background-repeat: no-repeat;
+        margin: 0.8rem;
+        margin-inline-end: 4rem;
+    }
+    .nav__careers{
+        margin-inline-end: 4rem;
+    }
+    .nav-buttons-container div{
+        font-size: 1.4rem;
+        font-family: 'Epilogue', sans-serif;
+        color:var(--Medium-Gray);
+
+    }
+    .login-container{
+        display: flex;
+        align-items: center;
+        margin-inline-start: 67rem;
+    }
+    .login-container div{
+        font-size: 1.4rem;
+        font-family: 'Epilogue', sans-serif;
+        margin-inline-end: 4.4rem;
+        color:var(--Medium-Gray)
+    }
+    .login-container button{
+        background-color: var(--Almost-White);
+        font-family: 'Epilogue', sans-serif;
+        border-radius: 1.4rem;
+        color: var(--Medium-Gray);
+        width: 12rem;
+        height: 4.4rem;
+    }
+
+    main{
+        grid-template: repeat(6, 10.50rem) / 2fr 2fr;
+        grid-area: 1 / 1 / 8 / 3;
+    }
+    .item-1 figure img {
+        display: none;
+    }
+    .item-1{
+        grid-area: 1 / 2 / 8 / 3;
+        background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765331/image-hero-desktop_u41wg2.png");
+        width: 88%;
+        margin: 0 0 0 10rem;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+    .item-2 br{
+            display: inline;
+        }
+    .item-2 h1{
+        font-size: 8.4rem;
+        text-align: start;
+        margin-block-start: 10rem;
+    }
+    .item-2 p{
+        font-size: 2.2rem;
+        text-align: start;
+        font-weight: 500;
+        padding: 0 13rem 0 0;
+        line-height: 3.2rem;
+        margin-block-start: 6rem;
+    }
+    .main-button-container{
+        justify-content: start;
+        margin-block-start: 6rem;
+    }
+    .item-2 button{
+        font-family: 'Epilogue', sans-serif;
+        font-size: 2rem;
+        width: 18rem;
+        height: 5.8rem;
+    }
+
+    .item-3{
+        grid-area: 7 / 1 / 8 / 2;
+    }
+    footer{
+        justify-content: start;
+        margin-block-start: 4.4rem;
+    }
+    footer figure img {
+        width: 10.4rem;
+        margin: 0 1.4rem;
+    }
+}
