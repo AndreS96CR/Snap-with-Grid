@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    html{
+    font-size: 62.5%;
+}
+    :root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --font: 1.6rem;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    margin-inline-start: 2rem;
+}
+.li--icon-1 {
+    background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765329/icon-todo_nlummw.svg");
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.li--icon-2{
+    background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765329/icon-calendar_se3nwo.svg");
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.li--icon-3{
+    background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765329/icon-reminders_mgacxy.svg");
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.li--icon-4{
+    background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765329/icon-planning_cobn50.svg");
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+li p{
+    font-size: 1.6rem;
+    font-family: 'Epilogue', sans-serif;
+    padding: 1.4rem 1rem;
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="li">
+            <span class="li li--icon-1"></span> 
+            <p>Todo List</p>
+        </li>
+        <li>
+            <span class="li li--icon-2"></span>
+            <p>Calendar</p>
+        </li>
+        <li>
+            <span class="li li--icon-3"></span>
+            <p>Reminders</p>
+        </li>
+        <li>
+            <span class="li li--icon-4"></span>
+            <p>Planning</p>
+        </li>
+    </ul>
+</body>
+</html>

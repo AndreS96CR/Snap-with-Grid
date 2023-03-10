@@ -77,7 +77,7 @@ footer figure img{
 
 }
 
-
+/* Estilos del hamburguer dropdown menu*/
 .aside-container{
     display: flex;
     flex-direction: column;
@@ -111,6 +111,7 @@ footer figure img{
 .aside__button{
     font-size: 1.6rem;
     font-family:  'Epilogue', sans-serif;
+    color: var(--Medium-Gray);
     padding: 1rem 0 1rem 2rem;
 }
 .dropdown--2{
@@ -147,6 +148,56 @@ footer figure img{
     display: none;
 }
 
+/* Estilos del dropdown menu de features*/
+li{
+    display: flex;
+    align-items: center;
+    margin-inline-start: 4.4rem;
+}
+.li--icon-1 {
+    background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765329/icon-todo_nlummw.svg");
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.li--icon-2{
+    background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765329/icon-calendar_se3nwo.svg");
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.li--icon-3{
+    background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765329/icon-reminders_mgacxy.svg");
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.li--icon-4{
+    background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765329/icon-planning_cobn50.svg");
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+li p{
+    font-size: 1.6rem;
+    font-family: 'Epilogue', sans-serif;
+    color: var(--Medium-Gray);
+    padding: 1.2rem 1rem;
+}
+.dropdown-3{
+    margin: 1rem 0;
+}
+.dropdown--4 li{
+    margin-inline-start: 3.6rem;
+}
 @media (min-width:1440px){
     .container-of-main-footer{
         display: grid;
