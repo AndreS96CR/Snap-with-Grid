@@ -25,9 +25,8 @@ nav{
 .dropdowns-container{
     display: none;
 }
-.dropdown{
-    display: none;
-}
+
+
 main{
     display: grid;
     grid-template: repeat(2, auto) / 1fr;
@@ -78,6 +77,76 @@ footer figure img{
 
 }
 
+
+.aside-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color: white;
+    width: 66%;
+    height: 100vh;
+}
+.aside-close-button-container{
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+    width: 100%;
+}
+.aside__close-button{
+    background-image: url('https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765329/icon-close-menu_xpi1l7.svg');
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+}
+.aside__dropdown-container{
+    display: flex;
+    align-items: center;
+}
+.aside__button{
+    font-size: 1.6rem;
+    font-family:  'Epilogue', sans-serif;
+    padding: 1rem 0 1rem 2rem;
+}
+.dropdown--2{
+    background-image: url('https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765327/icon-arrow-down_zvgped.svg');
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    margin: 1.4rem 0.8rem 0.8rem 1.2999999999999998rem;
+}
+.signIn-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-block-start: 2.4rem;
+}
+.login-button{
+    font-size: 1.6rem;
+    font-family:  'Epilogue', sans-serif;
+    margin-block-end: 1rem;
+}
+.register-button{
+    width: 21rem;
+    height: 4rem;
+    border-radius: 1.6rem;
+    border: 0.1rem solid;
+    background-color: var(--Almost-White);
+}
+.hamburguer-icon{
+    cursor: pointer;
+}
+.inactive {
+    display: none;
+}
+
 @media (min-width:1440px){
     .container-of-main-footer{
         display: grid;
@@ -106,7 +175,7 @@ footer figure img{
         display: flex;
         align-items: center;
     }
-    .arrow-down{
+    .arrow-down-icon{
         background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765327/icon-arrow-down_zvgped.svg");
         width: 1rem;
         height: 1rem;

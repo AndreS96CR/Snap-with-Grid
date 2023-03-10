@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html{
+    font-size: 62.5%;
+    }
+    :root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --font: 1.6rem;
+    }
+    .aside-container{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--Almost-White);
+        width: 66%;
+        height: 100vh;
+    }
+    .aside-close-button-container{
+        display: flex;
+        justify-content: end;
+        padding: 2rem;
+        width: 100%;
+    }
+    .aside__close-button{
+        background-image: url('https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765329/icon-close-menu_xpi1l7.svg');
+        width: 2.4rem;
+        height: 2.4rem;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+    }
+    .aside__dropdown-container{
+        display: flex;
+        align-items: center;
+    }
+    .aside__button{
+        font-size: 1.6rem;
+        font-family:  'Epilogue', sans-serif;
+        padding: 1rem 0 1rem 2rem;
+    }
+    .dropdown{
+        background-image: url('https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765327/icon-arrow-down_zvgped.svg');
+        width: 1rem;
+        height: 1rem;
+        background-repeat: no-repeat;
+        margin: 1.4rem 0.8rem 0.8rem 1.2999999999999998rem;
+    }
+    .signIn-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-block-start: 2.4rem;
+    }
+    .login-button{
+        font-size: 1.6rem;
+        font-family:  'Epilogue', sans-serif;
+        margin-block-end: 1rem;
+    }
+    .register-button{
+        width: 21rem;
+        height: 4rem;
+        border-radius: 1.6rem;
+        border: 0.1rem solid;
+        background-color: var(--Almost-White);
+    }
+    </style>
+</head>
+<body>
+    <aside class="aside-container">
+        <div class="aside-close-button-container">
+            <button class="aside__close-button"></button>
+        </div>
+        <div class="aside__dropdown-container">
+            <div class="aside__button">Features</div>
+            <span class="dropdown"></span>
+        </div>
+        <div class="aside__dropdown-container">
+            <div class="aside__button">Company</div>
+            <span class="dropdown"></span>
+        </div>
+        <div class="aside__button">Careers</div>
+        <div class="aside__button">About</div>
+        
+        
+        <div class="signIn-container">
+            <div class="login-button">Login</div>
+            <button class="register-button">Register</button>
+        </div>
+    </aside>
+</body>
+</html>
