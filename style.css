@@ -104,7 +104,11 @@ footer figure img{
     border: none;
     background-color: transparent;
 }
-.aside__dropdown-container{
+.aside__dropdown-container--1{
+    display: flex;
+    align-items: center;
+}
+.aside__dropdown-container--2{
     display: flex;
     align-items: center;
 }
