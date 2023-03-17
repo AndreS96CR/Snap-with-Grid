@@ -192,12 +192,13 @@ li p{
     color: var(--Medium-Gray);
     padding: 1.2rem 1rem;
 }
-.dropdown-3{
+.dropdown--3{
     margin: 1rem 0;
 }
 .dropdown--4 li{
     margin-inline-start: 3.6rem;
 }
+
 @media (min-width:1440px){
     .container-of-main-footer{
         display: grid;
