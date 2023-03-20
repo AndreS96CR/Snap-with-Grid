@@ -77,7 +77,7 @@ footer figure img{
 
 }
 
-/* Estilos del hamburguer dropdown menu*/
+/* styles of hamburguer menu*/
 .aside-container{
     display: flex;
     flex-direction: column;
@@ -152,7 +152,7 @@ footer figure img{
     display: none;
 }
 
-/* Estilos del dropdown menu de features*/
+/* Styles of features dropdown menu */
 li{
     display: flex;
     align-items: center;
@@ -231,6 +231,7 @@ li p{
         display: flex;
         align-items: center;
     }
+  
     .arrow-down-icon{
         background-image: url("https://res.cloudinary.com/dqc30i6eb/image/upload/v1677765327/icon-arrow-down_zvgped.svg");
         width: 1rem;
@@ -321,5 +322,37 @@ li p{
     footer figure img {
         width: 10.4rem;
         margin: 0 1.4rem;
+    }
+    .desktopFeaturesDropdown{
+        position: absolute;
+        width: 12rem;
+        top: 6.8rem;
+        right: 123.4rem;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0rem 0.4rem 3.8rem -1.4rem var(--Medium-Gray);
+    }
+    li p{
+        font-size: 1rem;
+    }
+    .li--icon-1, .li--icon-2, .li--icon-3, .li--icon-4  {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    li {
+        margin-inline-start:  2.4000000000000004rem;
+    }
+    .dropdown-4{
+        position: absolute;
+        width: 10rem;
+        top: 6.8rem;
+        right: 107.9rem;
+        margin-inline-end: 0;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0rem 0.4rem 3.8rem -1.4rem var(--Medium-Gray);
+    }
+    .dropdown--4 li{
+        margin-inline-start: 0rem;
     }
 }

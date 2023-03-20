@@ -6,8 +6,12 @@ const featuresItems = document.querySelector('.dropdown--3');
 const companyDropdown = document.querySelector('.aside__dropdown-container--2');
 const companyItems = document.querySelector('.dropdown--4');
 const mainContainer = document.querySelector('.main');
+const desktopFeaturesButton = document.querySelector('.dropdown--features');
+const desktopFeaturesDropdown = document.querySelector('.desktopFeaturesDropdown');
+const desktopCompanyButton = document.querySelector('.dropdown--company');
+const desktopCompanyDropdown = document.querySelector('.dropdown-4');
 
-/*Hamburguer Menu*/
+/*Hamburguer Menu in Mobile*/
 
 hamburguerIcon.addEventListener('click', toggleHamburguerIcon);
 closeButton.addEventListener('click', closeMobileMenu)
@@ -21,7 +25,7 @@ function closeMobileMenu(){
 }
 
 
-/* Features and company menus*/
+/* Features and company dropdowns in Mobile*/
 
 featuresDropdown.addEventListener('click', openFeatures);
 
@@ -35,16 +39,16 @@ function openCompany(){
 }
 
 
-// Toggle to close the dropdown menus
+// Features and company dropdowns in Desktop
 
-function closeDropDownMenus(){
-  const isHambuerguerClosed = hamburguerIcon.classList.includes('inactive');
-  const isfeaturesDropdownClosed = featuresDropdown.classList.includes('inactive');
-  const iscompanyDropDownClosed = companyDropdown.classList.includes('inactive');
-  
-  if(!isHambuerguerClosed || !isfeaturesDropdownClosed || !iscompanyDropDownClosed){
-    hamburguerIcon.classList.add('inactive');
-    featuresDropdown.classList.add('inactive');
-    companyDropdown.classList.add('inactive');
-  }
+desktopFeaturesButton.addEventListener('click', toggleDeskTopFeatures);
+
+function toggleDeskTopFeatures(){
+  desktopFeaturesDropdown.classList.toggle('inactive');
+}
+
+desktopCompanyButton.addEventListener('click', toggleDeskTopCompany);
+
+function toggleDeskTopCompany(){
+  desktopCompanyDropdown.classList.toggle('inactive');
 }
